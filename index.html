@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Выбери фигуру</title>
+
+<style>
+
+body{font-family:Arial,sans-serif;text-align:center;background:#f3f5fa;padding:30px 15px;color:#202533}
+
+h1{margin-top:60px}
+
+button{display:block;margin:22px auto;padding:20px;width:90%;max-width:330px;border:0;border-radius:16px;background:white;box-shadow:0 3px 14px #ccd0da;font-size:22px}
+
+.shape{font-size:38px;margin-right:12px}
+
+#result{font-size:20px;margin-top:30px}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Выбери фигуру</h1>
+
+<p>Нажми на одну из трёх фигур</p>
+
+<button onclick="choose('Треугольник')"><span class="shape">▲</span>Треугольник</button>
+
+<button onclick="choose('Круг')"><span class="shape">●</span>Круг</button>
+
+<button onclick="choose('Квадрат')"><span class="shape">■</span>Квадрат</button>
+
+<p id="result"></p>
+
+<script>
+
+function choose(shape){
+
+document.getElementById('result').textContent='Ты выбрал: '+shape;
+
+}
+
+</script>
+
+</body>
+
+</html>
